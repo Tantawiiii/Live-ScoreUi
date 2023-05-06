@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "728926448349",
+    "project_id": "live-scoreui",
+    "storage_bucket": "live-scoreui.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728926448349:android:6a6b39f871a9378d204934",
+        "android_client_info": {
+          "package_name": "com.example.livescoreui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728926448349-h7lvnghqbj35r0qpth31uu26s2h5gt57.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdmjsN4itt42Izfmhvye194VOmMN7_uvw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728926448349-h7lvnghqbj35r0qpth31uu26s2h5gt57.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Live ScoreUi</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="let_s_get_start_it">Search millions of jobs and get \nthe inside scoop on companies.\nWait for what? Let’s get start it!</string>
+    <string name="discover_all_n_about_sport">Discover all \n about sport.</string>
+    <string name="enter_your_name">Enter your Name.</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="you_can_choose_more_than_one">You can choose more than one.</string>
+    <string name="what_sport_do_nyou_interest">What sport do \nyou interest?</string>
+    <string name="continu">Continue</string>
+    <string name="what_sports">What Sports are you interested in?</string>
+    <string name="football">Football</string>
+    <string name="basketball">Basketball</string>
+    <string name="rugbyball">Rugbyball</string>
+    <string name="baseball">Baseball</string>
+    <string name="tennis">Tennis</string>
+    <string name="volleyball">Volleyball</string>
+</resources>
