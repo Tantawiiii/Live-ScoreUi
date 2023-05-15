@@ -12,7 +12,7 @@
         android:theme="@style/Theme.LiveScoreUi"
         tools:targetApi="31">
         <activity
-            android:name=".HomeActivity"
+            android:name=".ui.HomeActivity"
             android:exported="false" />
         <activity
             android:name=".ui.DashBoardActivity"

@@ -3,7 +3,7 @@
     <style name="Theme.LiveScoreUi" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/black_2</item>
-        <item name="colorPrimaryDark">@color/black_1</item>
+        <item name="colorPrimaryDark">@color/black_2</item>
         <item name="colorAccent">@color/white</item>
         <!-- Customize your theme here. -->
     </style>

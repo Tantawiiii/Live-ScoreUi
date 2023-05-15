@@ -31,7 +31,7 @@ class SportsAdapter(private val sportsList: ArrayList<SportsDash>)
     override fun getItemCount(): Int {
         return sportsList.size
     }
-
+ 
     @SuppressLint("ResourceAsColor", "NotifyDataSetChanged")
     override fun onBindViewHolder(holder: SportsViewHolder, @SuppressLint("RecyclerView") position: Int) {
         val sports = sportsList[position]

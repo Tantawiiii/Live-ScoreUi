@@ -10,10 +10,10 @@
 
     <RelativeLayout
         android:id="@+id/cardView"
-        android:layout_width="260dp"
-        android:layout_height="275dp"
+        android:layout_width="300dp"
+        android:layout_height="325dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="10dp"
         android:background="@drawable/round_bk"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,9 +21,10 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/imbabi" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_messi" />
 
     </RelativeLayout>
 
