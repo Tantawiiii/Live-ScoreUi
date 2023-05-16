@@ -1,7 +1,5 @@
 buildscript {
-    ext {
-        kotlin_version = '1.8.21'
-    }
+
     dependencies {
         classpath 'com.google.gms:google-services:4.3.15'
         classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.21'
