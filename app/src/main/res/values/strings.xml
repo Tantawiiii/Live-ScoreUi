@@ -25,4 +25,15 @@
     <string name="my_profile">My Profile</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ahmed_ramadan">Ahmed Ramadan</string>
+    <string name="activity">Activity</string>
+    <string name="setting">Settings</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="address">Address</string>
+    <string name="logout">LogOut</string>
+    <string name="logout_from_your_account">Logout from your Account</string>
+    <string name="cairo_egypt">Cairo, Egypt</string>
+    <string name="_20_109_464_2577">+20 109 464 2577</string>
+    <string name="ahmedtramadan4_gmail_com">ahmedtramadan4@gmail.com</string>
+    <string name="name">Name</string>
 </resources>

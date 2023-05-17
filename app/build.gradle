@@ -65,5 +65,7 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0'
     //Lottie Animation View
     implementation 'com.airbnb.android:lottie:3.7.0'
+    //circle Image lib
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
 
 }
