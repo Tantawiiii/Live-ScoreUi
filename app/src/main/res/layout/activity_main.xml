@@ -23,7 +23,9 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:scaleType="fitCenter"
+            android:rotation="17"
+            android:rotationY="4"
+            android:scaleType="centerInside"
             android:src="@drawable/ic_messi" />
 
     </RelativeLayout>
