@@ -1,14 +1,743 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black_2"
     tools:context=".fragments.DiscoveryFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.cardview.widget.CardView
+        android:id="@+id/search_card_explore"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardBackgroundColor="@color/black_3"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="2dp">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_search"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:contentDescription="@string/todo"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/search_for_news_team_match_etc"
+                android:textColorHint="@color/gray_off"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:inputType="text|textNoSuggestions"
+                app:boxBackgroundMode="@null"
+                android:background="@null"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:id="@+id/scrollView_explore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/search_card_explore">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/news"
+               android:textStyle="bold"
+               android:textColor="@color/gray_on"
+               android:textSize="21sp"
+               android:layout_marginStart="5dp"/>
+
+           <LinearLayout
+               android:id="@+id/linear"
+               android:layout_width="match_parent"
+               android:layout_height="100dp"
+               android:orientation="horizontal"
+               android:layout_marginTop="10dp"
+               android:clickable="true"
+               android:longClickable="true">
+
+               <ImageView
+                   android:layout_width="90dp"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center"
+                   android:scaleType="centerCrop"
+                   android:layout_marginStart="5dp"
+                   android:src="@drawable/lampard"
+                   android:background="@drawable/img_radius"
+                   android:clipToOutline="true"
+                   android:contentDescription="@string/todo"
+                   tools:targetApi="s" />
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_marginStart="15dp"
+                   android:layout_weight="1"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="5dp"
+                       android:text="@string/roumor_has_it_lampard_s_position_under_threat"
+                       android:textColor="@color/white"
+                       android:textSize="18sp" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="8dp"
+                       android:text="@string/_04_jan_2021_14_16"
+                       android:textColor="@color/gray_on"
+                       android:textSize="15sp" />
+               </LinearLayout>
+
+               <ImageView
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:layout_gravity="center"
+                   android:src="@drawable/ic_bookmark"
+                   android:contentDescription="@string/todo"/>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/linear2"
+               android:layout_width="match_parent"
+               android:layout_height="100dp"
+               android:orientation="horizontal"
+               android:layout_marginTop="15dp"
+               android:clickable="true"
+               android:longClickable="true"
+               android:focusable="true">
+
+               <ImageView
+                   android:layout_width="90dp"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center"
+                   android:scaleType="centerCrop"
+                   android:layout_marginStart="5dp"
+                   android:src="@drawable/arsenal_stadium"
+                   android:background="@drawable/img_radius"
+                   android:clipToOutline="true"
+                   android:contentDescription="@string/todo"
+                   tools:targetApi="s" />
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="100dp"
+                   android:layout_marginStart="15dp"
+                   android:layout_weight="1"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="5dp"
+                       android:text="@string/ideal_arsenal_tipped_to_sign_inter_and_ucl_winning_duo_on_free_transfers"
+                       android:textColor="@color/white"
+                       android:textSize="18sp" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="8dp"
+                       android:text="@string/_04_jan_2021_05_30"
+                       android:textColor="@color/gray_on"
+                       android:textSize="15sp" />
+               </LinearLayout>
+
+               <ImageView
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:layout_gravity="center"
+                   android:src="@drawable/ic_bookmark"
+                   android:contentDescription="@string/todo"/>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/linear3"
+               android:layout_width="match_parent"
+               android:layout_height="100dp"
+               android:orientation="horizontal"
+               android:layout_marginTop="15dp"
+               android:clickable="true"
+               android:longClickable="true"
+               android:focusable="true">
+
+               <ImageView
+                   android:layout_width="90dp"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center"
+                   android:scaleType="centerCrop"
+                   android:layout_marginStart="5dp"
+                   android:src="@drawable/pilbao"
+                   android:background="@drawable/img_radius"
+                   android:clipToOutline="true"
+                   android:contentDescription="@string/todo"
+                   tools:targetApi="s" />
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="100dp"
+                   android:layout_marginStart="15dp"
+                   android:layout_weight="1"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="5dp"
+                       android:text="@string/los_leones_host_rc_ernesto_admitted_the_lions_need_to_win_all_three_points"
+                       android:textColor="@color/white"
+                       android:textSize="18sp" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="8dp"
+                       android:text="@string/_04_jan_2021_07_44"
+                       android:textColor="@color/gray_on"
+                       android:textSize="15sp" />
+               </LinearLayout>
+
+               <ImageView
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:layout_gravity="center"
+                   android:src="@drawable/ic_bookmark"
+                   android:contentDescription="@string/todo"/>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/linear4"
+               android:layout_width="match_parent"
+               android:layout_height="100dp"
+               android:orientation="horizontal"
+               android:layout_marginTop="15dp"
+               android:clickable="true"
+               android:longClickable="true"
+               android:focusable="true">
+
+               <ImageView
+                   android:layout_width="90dp"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center"
+                   android:scaleType="centerCrop"
+                   android:layout_marginStart="5dp"
+                   android:src="@drawable/camp_nou"
+                   android:background="@drawable/img_radius"
+                   android:clipToOutline="true"
+                   android:contentDescription="@string/todo"
+                   tools:targetApi="s" />
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="100dp"
+                   android:layout_marginStart="15dp"
+                   android:layout_weight="1"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="5dp"
+                       android:text="@string/barcelona_secure_1_5bn_in_funds_to_begin_avant_garde_camp_nou_renovation"
+                       android:textColor="@color/white"
+                       android:textSize="18sp" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="8dp"
+                       android:text="@string/_05_jan_2021_10_50_pm"
+                       android:textColor="@color/gray_on"
+                       android:textSize="15sp" />
+               </LinearLayout>
+
+               <ImageView
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:layout_gravity="center"
+                   android:src="@drawable/ic_bookmark"
+                   android:contentDescription="@string/todo"/>
+
+           </LinearLayout>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/trending_news"
+               android:textStyle="bold"
+               android:textColor="@color/gray_on"
+               android:textSize="21sp"
+               android:layout_marginStart="5dp"
+               android:layout_marginTop="15dp"/>
+
+           <HorizontalScrollView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="15dp">
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="200dp"
+                   android:orientation="horizontal">
+
+                   <androidx.constraintlayout.widget.ConstraintLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <androidx.cardview.widget.CardView
+                           android:layout_width="350dp"
+                           android:layout_height="200dp"
+                           android:layout_marginEnd="15dp"
+                           app:cardCornerRadius="15dp"
+                           app:layout_constraintEnd_toEndOf="parent"
+                           app:layout_constraintStart_toStartOf="parent"
+                           app:layout_constraintTop_toTopOf="parent"
+                           app:layout_constraintBottom_toBottomOf="parent">
+
+                           <ImageView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:src="@drawable/vinicius_jr"
+                               android:scaleType="centerCrop"/>
+
+                           <LinearLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:orientation="vertical"
+                               android:layout_gravity="bottom"
+                               android:layout_marginStart="10dp"
+                               android:layout_marginBottom="10dp">
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="@string/vinicius_jr_says_racism_is_normal_in_laliga"
+                                   android:textColor="@color/white"
+                                   android:textSize="23sp"
+                                   android:textStyle="bold"/>
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="@string/sunday_21_may_2023_22_31_uk"
+                                   android:textColor="@color/white"
+                                   android:textSize="15sp"
+                                   android:textStyle="bold"/>
+                               
+                           </LinearLayout>
+
+                       </androidx.cardview.widget.CardView>
+
+
+
+                   </androidx.constraintlayout.widget.ConstraintLayout>
+
+                   <androidx.constraintlayout.widget.ConstraintLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <androidx.cardview.widget.CardView
+                           android:layout_width="350dp"
+                           android:layout_height="200dp"
+                           android:layout_marginEnd="15dp"
+                           app:cardCornerRadius="15dp"
+                           app:layout_constraintEnd_toEndOf="parent"
+                           app:layout_constraintStart_toStartOf="parent"
+                           app:layout_constraintTop_toTopOf="parent"
+                           app:layout_constraintBottom_toBottomOf="parent">
+
+                           <ImageView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:src="@drawable/skysports"
+                               android:scaleType="centerCrop"/>
+
+                           <LinearLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:orientation="vertical"
+                               android:layout_gravity="bottom"
+                               android:layout_marginStart="10dp"
+                               android:layout_marginBottom="10dp">
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="@string/man_city_champions_pep_guardiola_s"
+                                   android:textColor="@color/white"
+                                   android:textSize="23sp"
+                                   android:textStyle="bold"/>
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="@string/sunday_21_may_2023_12_33_uk"
+                                   android:textColor="@color/white"
+                                   android:textSize="15sp"
+                                   android:textStyle="bold"/>
+
+                           </LinearLayout>
+
+                       </androidx.cardview.widget.CardView>
+
+
+
+                   </androidx.constraintlayout.widget.ConstraintLayout>
+
+                   <androidx.constraintlayout.widget.ConstraintLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <androidx.cardview.widget.CardView
+                           android:layout_width="350dp"
+                           android:layout_height="200dp"
+                           android:layout_marginEnd="15dp"
+                           app:cardCornerRadius="15dp"
+                           app:layout_constraintEnd_toEndOf="parent"
+                           app:layout_constraintStart_toStartOf="parent"
+                           app:layout_constraintTop_toTopOf="parent"
+                           app:layout_constraintBottom_toBottomOf="parent">
+
+                           <ImageView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:src="@drawable/skysports1"
+                               android:scaleType="centerCrop"/>
+
+                           <LinearLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:orientation="vertical"
+                               android:layout_gravity="bottom"
+                               android:layout_marginStart="10dp"
+                               android:layout_marginBottom="10dp">
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="@string/josko_gvardiol_charting_rise_of_rb_leipzig_defender"
+                                   android:textColor="@color/white"
+                                   android:textSize="23sp"
+                                   android:textStyle="bold"/>
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="@string/friday_19_may_2023_07_54_uk"
+                                   android:textColor="@color/white"
+                                   android:textSize="15sp"
+                                   android:textStyle="bold"/>
+
+                           </LinearLayout>
+
+                       </androidx.cardview.widget.CardView>
+
+
+
+                   </androidx.constraintlayout.widget.ConstraintLayout>
+
+                   <androidx.constraintlayout.widget.ConstraintLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <androidx.cardview.widget.CardView
+                           android:layout_width="350dp"
+                           android:layout_height="200dp"
+                           android:layout_marginEnd="15dp"
+                           app:cardCornerRadius="15dp"
+                           app:layout_constraintEnd_toEndOf="parent"
+                           app:layout_constraintStart_toStartOf="parent"
+                           app:layout_constraintTop_toTopOf="parent"
+                           app:layout_constraintBottom_toBottomOf="parent">
+
+                           <ImageView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:src="@drawable/skysports2"
+                               android:scaleType="centerCrop"/>
+
+                           <LinearLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:orientation="vertical"
+                               android:layout_gravity="bottom"
+                               android:layout_marginStart="10dp"
+                               android:layout_marginBottom="10dp">
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="@string/rise_of_napoli_winger_compared_to_diego_maradona"
+                                   android:textColor="@color/white"
+                                   android:textSize="23sp"
+                                   android:textStyle="bold"/>
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="@string/tuesday_18_april_2023_11_03_uk"
+                                   android:textColor="@color/white"
+                                   android:textSize="15sp"
+                                   android:textStyle="bold"/>
+
+                           </LinearLayout>
+
+                       </androidx.cardview.widget.CardView>
+
+
+
+                   </androidx.constraintlayout.widget.ConstraintLayout>
+
+                   <androidx.constraintlayout.widget.ConstraintLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <androidx.cardview.widget.CardView
+                           android:layout_width="350dp"
+                           android:layout_height="200dp"
+                           android:layout_marginEnd="15dp"
+                           app:cardCornerRadius="15dp"
+                           app:layout_constraintEnd_toEndOf="parent"
+                           app:layout_constraintStart_toStartOf="parent"
+                           app:layout_constraintTop_toTopOf="parent"
+                           app:layout_constraintBottom_toBottomOf="parent">
+
+                           <ImageView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:src="@drawable/skysports2"
+                               android:scaleType="centerCrop"/>
+
+                           <LinearLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:orientation="vertical"
+                               android:layout_gravity="bottom"
+                               android:layout_marginStart="10dp"
+                               android:layout_marginBottom="10dp">
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="@string/rise_of_napoli_winger_compared_to_diego_maradona"
+                                   android:textColor="@color/white"
+                                   android:textSize="23sp"
+                                   android:textStyle="bold"/>
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="@string/tuesday_18_april_2023_11_03_uk"
+                                   android:textColor="@color/white"
+                                   android:textSize="15sp"
+                                   android:textStyle="bold"/>
+
+                           </LinearLayout>
+
+                       </androidx.cardview.widget.CardView>
+
+
+
+                   </androidx.constraintlayout.widget.ConstraintLayout>
+
+                   <androidx.constraintlayout.widget.ConstraintLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <androidx.cardview.widget.CardView
+                           android:layout_width="350dp"
+                           android:layout_height="200dp"
+                           android:layout_marginEnd="15dp"
+                           app:cardCornerRadius="15dp"
+                           app:layout_constraintEnd_toEndOf="parent"
+                           app:layout_constraintStart_toStartOf="parent"
+                           app:layout_constraintTop_toTopOf="parent"
+                           app:layout_constraintBottom_toBottomOf="parent">
+
+                           <ImageView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:src="@drawable/skysports"
+                               android:scaleType="centerCrop"/>
+
+                           <LinearLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:orientation="vertical"
+                               android:layout_gravity="bottom"
+                               android:layout_marginStart="10dp"
+                               android:layout_marginBottom="10dp">
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="@string/man_city_champions_pep_guardiola_s"
+                                   android:textColor="@color/white"
+                                   android:textSize="23sp"
+                                   android:textStyle="bold"/>
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="@string/sunday_21_may_2023_12_33_uk"
+                                   android:textColor="@color/white"
+                                   android:textSize="15sp"
+                                   android:textStyle="bold"/>
+
+                           </LinearLayout>
+
+                       </androidx.cardview.widget.CardView>
+
+
+
+                   </androidx.constraintlayout.widget.ConstraintLayout>
+
+                   <androidx.constraintlayout.widget.ConstraintLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <androidx.cardview.widget.CardView
+                           android:layout_width="350dp"
+                           android:layout_height="200dp"
+                           android:layout_marginEnd="15dp"
+                           app:cardCornerRadius="15dp"
+                           app:layout_constraintEnd_toEndOf="parent"
+                           app:layout_constraintStart_toStartOf="parent"
+                           app:layout_constraintTop_toTopOf="parent"
+                           app:layout_constraintBottom_toBottomOf="parent">
+
+                           <ImageView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:src="@drawable/skysports1"
+                               android:scaleType="centerCrop"/>
+
+                           <LinearLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:orientation="vertical"
+                               android:layout_gravity="bottom"
+                               android:layout_marginStart="10dp"
+                               android:layout_marginBottom="10dp">
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="@string/josko_gvardiol_charting_rise_of_rb_leipzig_defender"
+                                   android:textColor="@color/white"
+                                   android:textSize="23sp"
+                                   android:textStyle="bold"/>
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="@string/friday_19_may_2023_07_54_uk"
+                                   android:textColor="@color/white"
+                                   android:textSize="15sp"
+                                   android:textStyle="bold"/>
+
+                           </LinearLayout>
+
+                       </androidx.cardview.widget.CardView>
+
+
+
+                   </androidx.constraintlayout.widget.ConstraintLayout>
+
+                   <androidx.constraintlayout.widget.ConstraintLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <androidx.cardview.widget.CardView
+                           android:layout_width="350dp"
+                           android:layout_height="200dp"
+                           android:layout_marginEnd="15dp"
+                           app:cardCornerRadius="15dp"
+                           app:layout_constraintEnd_toEndOf="parent"
+                           app:layout_constraintStart_toStartOf="parent"
+                           app:layout_constraintTop_toTopOf="parent"
+                           app:layout_constraintBottom_toBottomOf="parent">
+
+                           <ImageView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:src="@drawable/skysports2"
+                               android:scaleType="centerCrop"/>
+
+                           <LinearLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:orientation="vertical"
+                               android:layout_gravity="bottom"
+                               android:layout_marginStart="10dp"
+                               android:layout_marginBottom="10dp">
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="@string/rise_of_napoli_winger_compared_to_diego_maradona"
+                                   android:textColor="@color/white"
+                                   android:textSize="23sp"
+                                   android:textStyle="bold"/>
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="@string/tuesday_18_april_2023_11_03_uk"
+                                   android:textColor="@color/white"
+                                   android:textSize="15sp"
+                                   android:textStyle="bold"/>
+
+                           </LinearLayout>
+
+                       </androidx.cardview.widget.CardView>
+
+
+
+                   </androidx.constraintlayout.widget.ConstraintLayout>
+
+               </LinearLayout>
+
+           </HorizontalScrollView>
+
+       </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
