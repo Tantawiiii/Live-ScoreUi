@@ -1,7 +1,6 @@
 package com.example.livescoreui.adapter
 
 import android.annotation.SuppressLint
-import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,7 +9,7 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.livescoreui.R
-import com.example.livescoreui.data.SportsDash
+import com.example.livescoreui.pojo.SportsDash
 
 class SportsAdapter(private val sportsList: ArrayList<SportsDash>)
     :RecyclerView.Adapter<SportsAdapter.SportsViewHolder>() {

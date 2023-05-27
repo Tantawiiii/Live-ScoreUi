@@ -10,12 +10,12 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/search_card_stand"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="55dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="35dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
         app:cardBackgroundColor="@color/black_3"
         app:cardCornerRadius="15dp"
         app:cardElevation="2dp">
@@ -40,10 +40,10 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_gravity="center_vertical"
-                android:hint="@string/search_for_news_team_match_etc"
+                android:hint="@string/search_for_ligas_team_match_etc"
                 android:textColorHint="@color/gray_off"
                 android:textColor="@color/white"
-                android:textSize="20sp"
+                android:textSize="17sp"
                 android:inputType="text|textNoSuggestions"
                 app:boxBackgroundMode="@null"
                 android:background="@null"/>
@@ -59,7 +59,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="35dp"
         android:layout_marginEnd="20dp">
 
         <LinearLayout
@@ -69,7 +69,6 @@
 
             <LinearLayout
                 android:id="@+id/ligaSpain_linear"
-
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:orientation="horizontal">
@@ -128,6 +127,66 @@
 
             </androidx.cardview.widget.CardView>
 
+            <LinearLayout
+                android:id="@+id/premier_linear"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:padding="2dp"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/ic_premierleague_white" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/premier_league"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/england"
+                        android:textColor="@color/gray_on"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_right_24" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black_3"
+                app:cardCornerRadius="25dp"
+                android:layout_marginTop="15dp">
+                <include
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    layout="@layout/premier_table"
+                    />
+
+            </androidx.cardview.widget.CardView>
         </LinearLayout>
 
     </ScrollView>
