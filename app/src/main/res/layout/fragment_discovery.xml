@@ -7,15 +7,16 @@
     android:background="@color/black_2"
     tools:context=".fragments.DiscoveryFragment">
 
+
     <androidx.cardview.widget.CardView
         android:id="@+id/search_card_explore"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="55dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="35dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
         app:cardBackgroundColor="@color/black_3"
         app:cardCornerRadius="15dp"
         app:cardElevation="2dp">
@@ -43,7 +44,7 @@
                 android:hint="@string/search_for_news_team_match_etc"
                 android:textColorHint="@color/gray_off"
                 android:textColor="@color/white"
-                android:textSize="20sp"
+                android:textSize="17sp"
                 android:inputType="text|textNoSuggestions"
                 app:boxBackgroundMode="@null"
                 android:background="@null"/>
@@ -51,6 +52,8 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
+
 
     <ScrollView
         android:id="@+id/scrollView_explore"

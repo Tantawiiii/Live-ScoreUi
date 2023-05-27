@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:background="@color/black_2">
+
+
+    <TableRow android:background="@color/black_3" android:padding="10dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_premierleague_white"
+            android:layout_marginEnd="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Team"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GA"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="W"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="L"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-/+"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pts"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+
+    </TableRow>
+
+    <TableRow android:background="@color/black_3" android:padding="10dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+             android:src="@drawable/ic_manchestercity"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:layout_width="207dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Manchester City"
+            android:textColor="@color/white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="37"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="28"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="32:94"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="89"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+    </TableRow>
+
+    <TableRow android:background="@color/black_3" android:padding="10dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_arsenal"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Arsenal"
+            android:textColor="@color/white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="37"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="43:83"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="81"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+    </TableRow>
+
+    <TableRow android:background="@color/black_3" android:padding="10dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_united"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Manchester United"
+            android:textColor="@color/white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="37"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="42:56"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="72"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+    </TableRow>
+
+    <TableRow android:background="@color/black_3" android:padding="10dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/liverpool"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Liverpool"
+            android:textColor="@color/white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="37"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="19"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="43:71"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="66"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+    </TableRow>
+
+    <TableRow android:background="@color/black_3" android:padding="10dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_chelsea"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Chelsea"
+            android:textColor="@color/white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="37"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="51:71"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="62"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"/>
+    </TableRow>
+
+</TableLayout>

@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.livescoreui.R
 import com.example.livescoreui.adapter.SportsAdapter
-import com.example.livescoreui.data.SportsDash
+import com.example.livescoreui.pojo.SportsDash
 import com.example.livescoreui.databinding.ActivityDashBoardBinding
 
 class DashBoardActivity : AppCompatActivity() {

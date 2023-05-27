@@ -64,4 +64,8 @@
     <string name="josko_gvardiol_charting_rise_of_rb_leipzig_defender">Josko Gvardiol: Charting rise of RB Leipzig defender</string>
     <string name="rise_of_napoli_winger_compared_to_diego_maradona">Rise of Napoli winger compared to Diego Maradona</string>
     <string name="tuesday_18_april_2023_11_03_uk">Tuesday 18 April 2023 11:03, UK</string>
+    <string name="user_name">User Name</string>
+    <string name="search_for_ligas_team_match_etc">Search for Ligas, team, match, etc...</string>
+    <string name="barcelona">Barcelona</string>
+    <string name="real_madrid">Real Madrid</string>
 </resources>

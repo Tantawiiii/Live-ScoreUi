@@ -19,7 +19,6 @@ class StandingFragment : Fragment() {
     }
 
     companion object {
-
         @JvmStatic
         fun newInstance() =
             StandingFragment().apply {

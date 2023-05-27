@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/containerHomeLayout"
     android:background="@color/black_2"
     tools:context=".fragments.HomeFragment">
 
@@ -396,6 +397,385 @@
 
             </HorizontalScrollView>
 
+            <!--Comment in xml file
+            <RelativeLayout
+                android:id="@+id/layout_liga"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@id/category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black_2">
+
+                <LinearLayout
+                    android:id="@+id/ligaSpain_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:padding="2dp"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/ic_laliga" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="15dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/la_liga"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/spain"
+                            android:textColor="@color/gray_on"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_arrow_right_24" />
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:id="@+id/barcaVSreal"
+                    android:layout_below="@id/ligaSpain_linear"
+                    app:cardBackgroundColor="@color/black_3"
+                    android:layout_marginTop="15dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    android:onClick="getDetailsMatch"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="330dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bg_icon_black_off"
+                            android:scaleType="centerInside"
+                            android:padding="5dp"
+                            android:layout_marginEnd="2dp"
+                            android:src="@drawable/ic_barcelona"
+                            android:layout_gravity="center"/>
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bg_icon_black_off"
+                            android:scaleType="centerInside"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_realmadrid"
+                            android:layout_gravity="center"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Barcelona Vs Real Madrid"
+                                android:textSize="18sp"
+                                android:textColor="@color/white"
+                                android:layout_gravity="center"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="3     -     2"
+                                android:layout_gravity="center"
+                                android:textSize="15sp"
+                                android:textColor="@color/white"
+
+                                android:layout_marginTop="5dp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/ht"
+                        android:textSize="18sp"
+                        android:background="@color/black_1"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_gravity="end"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:id="@+id/atletico"
+                    android:layout_below="@id/barcaVSreal"
+                    app:cardBackgroundColor="@color/black_3"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="330dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bg_icon_black_off"
+                            android:scaleType="centerInside"
+                            android:padding="5dp"
+                            android:layout_marginEnd="2dp"
+                            android:src="@drawable/ic_atletico_madrid"
+                            android:layout_gravity="center"/>
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bg_icon_black_off"
+                            android:scaleType="centerInside"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_valencia"
+                            android:layout_gravity="center"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Atletico   Vs   Valencia"
+                                android:textSize="18sp"
+                                android:textColor="@color/white"
+                                android:layout_gravity="center"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4     -     2"
+                                android:layout_gravity="center"
+                                android:textSize="15sp"
+                                android:textColor="@color/white"
+
+                                android:layout_marginTop="5dp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/ht"
+                        android:textSize="18sp"
+                        android:background="@color/black_1"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_gravity="end"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:id="@+id/celta"
+                    android:layout_below="@id/atletico"
+                    app:cardBackgroundColor="@color/black_3"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="330dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bg_icon_black_off"
+                            android:scaleType="centerInside"
+                            android:padding="5dp"
+                            android:layout_marginEnd="2dp"
+                            android:src="@drawable/ic_realsociedad"
+                            android:layout_gravity="center"/>
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bg_icon_black_off"
+                            android:scaleType="centerInside"
+                            android:padding="1dp"
+                            android:src="@drawable/ic_celta"
+                            android:layout_gravity="center"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Real Sociedad   Vs   Celta"
+                                android:textSize="18sp"
+                                android:textColor="@color/white"
+                                android:layout_gravity="center"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1     -     1"
+                                android:layout_gravity="center"
+                                android:textSize="15sp"
+                                android:textColor="@color/white"
+                                android:layout_marginTop="5dp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:text="FT"
+                        android:textSize="18sp"
+                        android:background="@color/black_1"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_gravity="end"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:id="@+id/sevilla"
+                    android:layout_below="@id/celta"
+                    app:cardBackgroundColor="@color/black_3"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="330dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bg_icon_black_off"
+                            android:scaleType="centerInside"
+                            android:padding="5dp"
+                            android:layout_marginEnd="2dp"
+                            android:src="@drawable/ic_sevilla"
+                            android:layout_gravity="center"/>
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bg_icon_black_off"
+                            android:scaleType="centerInside"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_villarreal"
+                            android:layout_gravity="center"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sevilla Vs Villareal"
+                                android:textSize="18sp"
+                                android:textColor="@color/white"
+                                android:layout_gravity="center"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="3     -     0"
+                                android:layout_gravity="center"
+                                android:textSize="15sp"
+                                android:textColor="@color/white"
+                                android:layout_marginTop="5dp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/ht"
+                        android:textSize="18sp"
+                        android:background="@color/black_1"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_gravity="end"/>
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+            -->
+
             <include
                 android:id="@+id/layout_liga"
                 android:layout_alignParentStart="true"
@@ -428,4 +808,4 @@
     </ScrollView>
 
 
-</RelativeLayout>
+</FrameLayout>
